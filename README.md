@@ -1,13 +1,11 @@
 import React, { useReducer } from "react";
 
-// Initial student list
 const initialStudents = [
   { id: 1, name: "Bhaskar", status: "Absent" },
   { id: 2, name: "Raju", status: "Absent" },
   { id: 3, name: "Harsha", status: "Absent" }
 ];
 
-// Reducer function
 function attendanceReducer(state, action) {
   switch (action.type) {
     case "MARK_PRESENT":
@@ -34,6 +32,7 @@ function App() {
   return (
     <div style={{ padding: "20px" }}>
       <h1>Student Attendance Tracker</h1>
+
       <table border="1" cellPadding="10">
         <thead>
           <tr>
